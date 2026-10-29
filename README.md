@@ -13,7 +13,7 @@
 
 <p align="center">
   <b>Portofolio web modern berbasis React.js dengan tema Machine Learning & Software Engineering.</b><br />
-  Dirancang dengan pendekatan visual <i>developer-centric</i> yang terinspirasi dari estetika repositori <a href="https://github.com/Syahrulalhabib/portfolio-web.git">Syahrulalhabib/portfolio-web</a>.
+  Repositori resmi portofolio Mochammad Gendry Afriansyah: <a href="https://github.com/gendryafriansyah/Portofolio">github.com/gendryafriansyah/Portofolio</a>
 </p>
 
 [🌐 Live Demo](#-panduan-menjalankan-proyek) • [📂 Proyek Unggulan](#-proyek-portofolio-cv) • [🎓 Pendidikan & Pengalaman](#-pengalaman--pendidikan) • [📬 Hubungi Saya](#-kontak)
@@ -139,8 +139,8 @@ Berpengalaman dalam riset dan implementasi model **Machine Learning**, **Compute
 
 ### 1. Kloning Repositori
 ```bash
-git clone https://github.com/gendryafriansyah/portfolio-web.git
-cd portfolio-web
+git clone https://github.com/gendryafriansyah/Portofolio.git
+cd Portofolio
 ```
 
 ### 2. Instalasi Dependensi
