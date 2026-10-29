@@ -1,16 +1,8 @@
-import { useState } from 'react'
 import { profile } from '../data/content'
 import { useReveal } from '../hooks/useReveal'
 
 export default function Contact() {
   const ref = useReveal()
-  const [copiedType, setCopiedType] = useState(null)
-
-  const handleCopy = (text, type) => {
-    navigator.clipboard.writeText(text)
-    setCopiedType(type)
-    setTimeout(() => setCopiedType(null), 2000)
-  }
 
   return (
     <section id="contact" className="py-24 px-6 border-t border-[#e5e7eb] dark:border-[#22272E]">
@@ -26,7 +18,7 @@ export default function Contact() {
         </p>
 
         {/* 4 Harmonious Action Buttons */}
-        <div className="flex flex-wrap gap-3 justify-center items-center mb-6">
+        <div className="flex flex-wrap gap-3 justify-center items-center">
           {/* CV Download */}
           <a
             href={profile.cv}
@@ -80,28 +72,6 @@ export default function Contact() {
             </svg>
             <span>LinkedIn</span>
           </a>
-        </div>
-
-        {/* Direct Copy Info Bar */}
-        <div className="flex flex-wrap items-center justify-center gap-3 text-xs font-mono text-[#6b7280] dark:text-[#9CA3AF] pt-2">
-          <button
-            onClick={() => handleCopy(profile.email, 'email')}
-            className="px-3 py-1.5 rounded-lg bg-white dark:bg-[#14171D] border border-[#e5e7eb] dark:border-[#252A33] hover:text-[#111] dark:hover:text-white transition-colors cursor-pointer flex items-center gap-1.5"
-          >
-            <span>{profile.email}</span>
-            <span className="text-emerald-500 font-bold">
-              {copiedType === 'email' ? '✓ Copied!' : '[Copy]'}
-            </span>
-          </button>
-          <button
-            onClick={() => handleCopy(profile.phone, 'phone')}
-            className="px-3 py-1.5 rounded-lg bg-white dark:bg-[#14171D] border border-[#e5e7eb] dark:border-[#252A33] hover:text-[#111] dark:hover:text-white transition-colors cursor-pointer flex items-center gap-1.5"
-          >
-            <span>{profile.phoneDisplay}</span>
-            <span className="text-emerald-500 font-bold">
-              {copiedType === 'phone' ? '✓ Copied!' : '[Copy]'}
-            </span>
-          </button>
         </div>
       </div>
     </section>

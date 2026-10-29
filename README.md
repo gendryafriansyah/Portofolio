@@ -56,7 +56,6 @@ Berpengalaman dalam riset dan implementasi model **Machine Learning**, **Compute
 5. **Hub Kontak 4 Tombol Aksi**
    - Tombol unduh berkas asli PDF CV (*Curriculum Vitae.pdf*).
    - Tautan langsung ke Gmail (`gendryap@gmail.com`), GitHub (`github.com/gendryafriansyah`), dan LinkedIn (`linkedin.com/in/mgendrya`).
-   - Tombol salin informasi kontak (*Click to Copy*) dengan indikator toast instan.
 
 ---
 
