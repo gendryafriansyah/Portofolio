@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#061c14"/>
+      <stop offset="50%" stop-color="#0a2a1e"/>
+      <stop offset="100%" stop-color="#03120c"/>
+    </linearGradient>
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#10b981" stroke-width="0.75" opacity="0.12"/>
+    </pattern>
+  </defs>
+  
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect width="800" height="500" fill="url(#grid)"/>
+
+  <circle cx="280" cy="240" r="180" fill="#10b981" opacity="0.12"/>
+  <circle cx="600" cy="260" r="140" fill="#065f46" opacity="0.2"/>
+
+  <!-- Left Side: Android Mobile Frame with Scanner -->
+  <g transform="translate(70, 45)">
+    <!-- Phone Body -->
+    <rect x="0" y="0" width="240" height="410" rx="32" fill="#0f1715" stroke="#1e3a30" stroke-width="3"/>
+    <rect x="10" y="10" width="220" height="390" rx="24" fill="#07130e"/>
+    
+    <!-- Phone Notch / Camera -->
+    <rect x="85" y="16" width="70" height="14" rx="7" fill="#1e2925"/>
+    <circle cx="140" cy="23" r="3" fill="#10b981"/>
+
+    <!-- App Header -->
+    <text x="25" y="55" fill="#a7f3d0" font-family="monospace" font-size="12" font-weight="bold">HerbalAI • CNN Mobile</text>
+    <rect x="165" y="44" width="55" height="16" rx="4" fill="#065f46"/>
+    <text x="170" y="56" fill="#6ee7b7" font-family="monospace" font-size="9">OFFLINE</text>
+
+    <!-- Camera Viewport with Leaf Scanning Target -->
+    <rect x="20" y="70" width="200" height="200" rx="14" fill="#020a06" stroke="#059669" stroke-width="1.5"/>
+    
+    <!-- Stylized Leaf Vector -->
+    <path d="M 120 100 C 170 120 190 170 170 210 C 150 250 120 260 120 260 C 120 260 90 250 70 210 C 50 170 70 120 120 100 Z" fill="url(#leafGrad)" opacity="0.85"/>
+    <path d="M 120 110 L 120 250 M 120 150 L 155 130 M 120 180 L 160 165 M 120 150 L 85 130 M 120 180 L 80 165 M 120 210 L 150 200 M 120 210 L 90 200" stroke="#022c22" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Scanning Reticle Corners -->
+    <path d="M 35 90 L 35 80 L 45 80" stroke="#10b981" stroke-width="3" fill="none"/>
+    <path d="M 195 90 L 195 80 L 185 80" stroke="#10b981" stroke-width="3" fill="none"/>
+    <path d="M 35 240 L 35 250 L 45 250" stroke="#10b981" stroke-width="3" fill="none"/>
+    <path d="M 195 240 L 195 250 L 185 250" stroke="#10b981" stroke-width="3" fill="none"/>
+    
+    <!-- Laser Scan Bar -->
+    <line x1="25" y1="175" x2="215" y2="175" stroke="#34d399" stroke-width="2" stroke-dasharray="6,4" opacity="0.9"/>
+
+    <!-- Prediction Card inside Mobile App -->
+    <rect x="20" y="280" width="200" height="105" rx="12" fill="#092117" stroke="#10b981" stroke-width="1"/>
+    <text x="32" y="300" fill="#34d399" font-family="sans-serif" font-size="12" font-weight="bold">Daun Sirih (Piper betle)</text>
+    <text x="32" y="316" fill="#a7f3d0" font-family="monospace" font-size="10">Model Match: 98.6% (CNN)</text>
+    
+    <!-- Confidence Bar -->
+    <rect x="32" y="324" width="176" height="5" rx="2.5" fill="#042f24"/>
+    <rect x="32" y="324" width="173" height="5" rx="2.5" fill="#10b981"/>
+
+    <!-- Health Recommendation Tags -->
+    <rect x="32" y="338" width="80" height="18" rx="5" fill="#064e3b"/>
+    <text x="38" y="351" fill="#a7f3d0" font-family="sans-serif" font-size="9">Antiseptik Alami</text>
+    <rect x="116" y="338" width="65" height="18" rx="5" fill="#064e3b"/>
+    <text x="122" y="351" fill="#a7f3d0" font-family="sans-serif" font-size="9">Batuk &amp; Radang</text>
+    <text x="32" y="373" fill="#6ee7b7" font-family="sans-serif" font-size="9">✓ On-Device Local Processing</text>
+  </g>
+
+  <!-- Right Side: Deep Learning Architecture HUD -->
+  <g transform="translate(360, 55)">
+    <rect x="0" y="0" width="380" height="190" rx="16" fill="#071812" stroke="#1e3a30" stroke-width="1.5"/>
+    <rect x="0" y="0" width="380" height="36" rx="16" fill="#0b241c"/>
+    <text x="20" y="23" fill="#ecfdf5" font-family="sans-serif" font-size="13" font-weight="bold">Edge CNN Inference Pipeline</text>
+    <circle cx="350" cy="18" r="4" fill="#10b981"/>
+
+    <rect x="18" y="55" width="70" height="60" rx="8" fill="#0a2a1e" stroke="#10b981" stroke-width="1"/>
+    <text x="26" y="77" fill="#6ee7b7" font-family="monospace" font-size="10" font-weight="bold">Leaf Img</text>
+    <text x="24" y="93" fill="#9ca3af" font-family="monospace" font-size="9">224x224x3</text>
+    <text x="28" y="105" fill="#34d399" font-family="monospace" font-size="8">OpenCV</text>
+
+    <path d="M 94 85 L 108 85" stroke="#10b981" stroke-width="2"/>
+
+    <rect x="112" y="55" width="80" height="60" rx="8" fill="#0a2a1e" stroke="#10b981" stroke-width="1"/>
+    <text x="120" y="75" fill="#6ee7b7" font-family="monospace" font-size="10" font-weight="bold">Conv2D</text>
+    <text x="120" y="89" fill="#9ca3af" font-family="monospace" font-size="9">ReLU • 64f</text>
+    <text x="120" y="103" fill="#34d399" font-family="monospace" font-size="8">MaxPool</text>
+
+    <path d="M 198 85 L 212 85" stroke="#10b981" stroke-width="2"/>
+
+    <rect x="216" y="55" width="75" height="60" rx="8" fill="#0a2a1e" stroke="#10b981" stroke-width="1"/>
+    <text x="226" y="75" fill="#6ee7b7" font-family="monospace" font-size="10" font-weight="bold">Dense</text>
+    <text x="224" y="89" fill="#9ca3af" font-family="monospace" font-size="9">Dropout 0.3</text>
+    <text x="226" y="103" fill="#34d399" font-family="monospace" font-size="8">Softmax</text>
+
+    <path d="M 297 85 L 308 85" stroke="#10b981" stroke-width="2"/>
+
+    <rect x="312" y="55" width="55" height="60" rx="8" fill="#10b981" opacity="0.9"/>
+    <text x="317" y="80" fill="#022c22" font-family="monospace" font-size="10" font-weight="bold">Class</text>
+    <text x="317" y="96" fill="#022c22" font-family="monospace" font-size="10" font-weight="bold">98.6%</text>
+
+    <line x1="20" y1="130" x2="360" y2="130" stroke="#1e3a30" stroke-width="1"/>
+    <text x="20" y="152" fill="#9ca3af" font-family="monospace" font-size="10">Quantization: <tspan fill="#34d399">TFLite FP16</tspan></text>
+    <text x="20" y="172" fill="#9ca3af" font-family="monospace" font-size="10">Latency: <tspan fill="#34d399">12.4ms</tspan> • Ext. DB: <tspan fill="#34d399">None (100% Offline)</tspan></text>
+    <text x="220" y="152" fill="#9ca3af" font-family="monospace" font-size="10">Dataset: <tspan fill="#34d399">Indonesian Herbs</tspan></text>
+  </g>
+
+  <!-- Right Side Bottom: Edge Architecture Highlights -->
+  <g transform="translate(360, 265)">
+    <rect x="0" y="0" width="380" height="185" rx="16" fill="#071812" stroke="#1e3a30" stroke-width="1.5"/>
+    <rect x="0" y="0" width="380" height="34" rx="16" fill="#0b241c"/>
+    <text x="20" y="22" fill="#ecfdf5" font-family="sans-serif" font-size="12" font-weight="bold">Key Software Engineering Specifications</text>
+    
+    <g transform="translate(20, 52)">
+      <circle cx="8" cy="8" r="4" fill="#10b981"/>
+      <text x="22" y="12" fill="#d1fae5" font-family="sans-serif" font-size="11" font-weight="600">On-Device Edge AI Deployment</text>
+      <text x="22" y="27" fill="#9ca3af" font-family="sans-serif" font-size="10">Inference executed locally on mobile hardware; zero internet required.</text>
+    </g>
+
+    <g transform="translate(20, 95)">
+      <circle cx="8" cy="8" r="4" fill="#10b981"/>
+      <text x="22" y="12" fill="#d1fae5" font-family="sans-serif" font-size="11" font-weight="600">OpenCV Preprocessing Pipeline</text>
+      <text x="22" y="27" fill="#9ca3af" font-family="sans-serif" font-size="10">Histogram equalization, background noise suppression &amp; leaf boundary crop.</text>
+    </g>
+
+    <g transform="translate(20, 138)">
+      <circle cx="8" cy="8" r="4" fill="#10b981"/>
+      <text x="22" y="12" fill="#d1fae5" font-family="sans-serif" font-size="11" font-weight="600">Integrated Herbal Remedy Knowledgebase</text>
+      <text x="22" y="27" fill="#9ca3af" font-family="sans-serif" font-size="10">Instantly serves natural treatment guides for mild ailments &amp; symptoms.</text>
+    </g>
+  </g>
+</svg>

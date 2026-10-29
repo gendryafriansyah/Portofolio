@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <rect width="48" height="48" rx="12" fill="#0B0C0E" stroke="#10b981" stroke-width="2" />
+  <text x="24" y="32" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="22" font-weight="800" fill="#10b981" text-anchor="middle" letter-spacing="-1">~/</text>
+  <circle cx="36" cy="14" r="3" fill="#10b981" />
+</svg>

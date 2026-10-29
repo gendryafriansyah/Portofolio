@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="frBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08101e"/>
+      <stop offset="50%" stop-color="#0d1b33"/>
+      <stop offset="100%" stop-color="#050a14"/>
+    </linearGradient>
+    <pattern id="frGrid" width="35" height="35" patternUnits="userSpaceOnUse">
+      <path d="M 35 0 L 0 0 0 35" fill="none" stroke="#38bdf8" stroke-width="0.7" opacity="0.12"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#frBg)"/>
+  <rect width="800" height="500" fill="url(#frGrid)"/>
+
+  <!-- Left Side: Live Webcam Feed UI with Detection Mesh -->
+  <g transform="translate(50, 45)">
+    <rect x="0" y="0" width="370" height="410" rx="18" fill="#0b1322" stroke="#1e293b" stroke-width="2"/>
+    
+    <!-- Feed Header -->
+    <rect x="0" y="0" width="370" height="40" rx="18" fill="#0f172a"/>
+    <circle cx="22" cy="20" r="4" fill="#ef4444"/>
+    <text x="35" y="24" fill="#f8fafc" font-family="monospace" font-size="11" font-weight="bold">LIVE CAM 01 • AUTOMATED ATTENDANCE</text>
+    <rect x="290" y="10" width="65" height="20" rx="5" fill="#0284c7"/>
+    <text x="300" y="24" fill="#ffffff" font-family="monospace" font-size="10">ONLINE</text>
+
+    <!-- Camera Canvas Area -->
+    <rect x="15" y="55" width="340" height="270" rx="12" fill="#030712" stroke="#1e293b" stroke-width="1.5"/>
+    
+    <!-- Face Silhouette -->
+    <path d="M 185 110 C 220 110 245 140 245 180 C 245 225 215 255 185 260 C 155 255 125 225 125 180 C 125 140 150 110 185 110 Z" fill="#1e293b" opacity="0.5"/>
+    <path d="M 110 320 C 120 280 150 265 185 265 C 220 265 250 280 260 320 Z" fill="#1e293b" opacity="0.4"/>
+
+    <!-- Face Landmark Mesh -->
+    <circle cx="165" cy="170" r="3" fill="#38bdf8"/>
+    <circle cx="205" cy="170" r="3" fill="#38bdf8"/>
+    <circle cx="185" cy="195" r="3" fill="#38bdf8"/>
+    <circle cx="175" cy="225" r="2.5" fill="#38bdf8"/>
+    <circle cx="195" cy="225" r="2.5" fill="#38bdf8"/>
+    <path d="M 165 170 L 185 195 L 205 170 M 185 195 L 175 225 L 195 225 L 185 195 M 165 170 L 175 225 M 205 170 L 195 225" stroke="#38bdf8" stroke-width="1.2" opacity="0.8" fill="none"/>
+
+    <!-- Face Bounding Box with Corner Accents -->
+    <rect x="115" y="95" width="140" height="180" rx="6" fill="none" stroke="#38bdf8" stroke-width="1.8" stroke-dasharray="8,6"/>
+    <path d="M 115 115 L 115 95 L 135 95" stroke="#38bdf8" stroke-width="3" fill="none"/>
+    <path d="M 235 95 L 255 95 L 255 115" stroke="#38bdf8" stroke-width="3" fill="none"/>
+    <path d="M 115 255 L 115 275 L 135 275" stroke="#38bdf8" stroke-width="3" fill="none"/>
+    <path d="M 235 275 L 255 275 L 255 255" stroke="#38bdf8" stroke-width="3" fill="none"/>
+
+    <rect x="115" y="70" width="155" height="22" rx="4" fill="#0284c7"/>
+    <text x="122" y="85" fill="#ffffff" font-family="monospace" font-size="10" font-weight="bold">MATCH: 99.4% (k-NN)</text>
+
+    <!-- Scan Line -->
+    <line x1="20" y1="185" x2="350" y2="185" stroke="#0ea5e9" stroke-width="2" opacity="0.85"/>
+
+    <!-- Status Notification -->
+    <rect x="15" y="338" width="340" height="55" rx="10" fill="#0369a1" opacity="0.2" stroke="#0284c7" stroke-width="1"/>
+    <circle cx="35" cy="365" r="10" fill="#10b981"/>
+    <path d="M 31 365 L 34 368 L 39 362" stroke="#ffffff" stroke-width="2" fill="none"/>
+    <text x="55" y="360" fill="#f8fafc" font-family="sans-serif" font-size="11" font-weight="bold">Presensi Berhasil Divalidasi</text>
+    <text x="55" y="376" fill="#93c5fd" font-family="monospace" font-size="9">ID: MGA-0024 • Timestamp: 08:14:22 WIB</text>
+  </g>
+
+  <!-- Right Side: Pipeline -->
+  <g transform="translate(445, 45)">
+    <rect x="0" y="0" width="305" height="195" rx="16" fill="#0b1322" stroke="#1e293b" stroke-width="1.5"/>
+    <rect x="0" y="0" width="305" height="36" rx="16" fill="#0f172a"/>
+    <text x="18" y="23" fill="#f8fafc" font-family="sans-serif" font-size="12" font-weight="bold">k-NN Classifier &amp; Feature Pipeline</text>
+
+    <g transform="translate(18, 52)">
+      <text x="0" y="10" fill="#94a3b8" font-family="monospace" font-size="10">Algorithm: <tspan fill="#38bdf8">k-Nearest Neighbors (k=3)</tspan></text>
+      <text x="0" y="30" fill="#94a3b8" font-family="monospace" font-size="10">Distance Metric: <tspan fill="#38bdf8">Euclidean L2 Norm</tspan></text>
+      <text x="0" y="50" fill="#94a3b8" font-family="monospace" font-size="10">Vector Embeddings: <tspan fill="#38bdf8">128-D Face Encodings</tspan></text>
+      <text x="0" y="70" fill="#94a3b8" font-family="monospace" font-size="10">Inference Speed: <tspan fill="#10b981">16 ms / frame</tspan></text>
+      <text x="0" y="90" fill="#94a3b8" font-family="monospace" font-size="10">FAR (False Accept): <tspan fill="#10b981">&lt; 0.05%</tspan></text>
+      
+      <line x1="0" y1="105" x2="270" y2="105" stroke="#1e293b" stroke-width="1"/>
+      <text x="0" y="125" fill="#38bdf8" font-family="monospace" font-size="10">Role: Data Scientist &amp; ML Engineer</text>
+    </g>
+
+    <!-- Bottom Card: Real-time Attendance Roster Table -->
+    <g transform="translate(0, 215)">
+      <rect x="0" y="0" width="305" height="195" rx="16" fill="#0b1322" stroke="#1e293b" stroke-width="1.5"/>
+      <rect x="0" y="0" width="305" height="34" rx="16" fill="#0f172a"/>
+      <text x="18" y="22" fill="#f8fafc" font-family="sans-serif" font-size="12" font-weight="bold">Recent Verified Logs</text>
+
+      <g transform="translate(18, 52)">
+        <rect x="0" y="0" width="270" height="36" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+        <text x="10" y="18" fill="#f8fafc" font-family="sans-serif" font-size="10" font-weight="600">M. Gendry Afriansyah</text>
+        <text x="10" y="30" fill="#94a3b8" font-family="monospace" font-size="8">Status: HADIR (Ontime)</text>
+        <rect x="200" y="8" width="60" height="18" rx="4" fill="#065f46"/>
+        <text x="210" y="20" fill="#34d399" font-family="monospace" font-size="8">VERIFIED</text>
+      </g>
+
+      <g transform="translate(18, 96)">
+        <rect x="0" y="0" width="270" height="36" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+        <text x="10" y="18" fill="#f8fafc" font-family="sans-serif" font-size="10" font-weight="600">Ahmad Fauzi</text>
+        <text x="10" y="30" fill="#94a3b8" font-family="monospace" font-size="8">Status: HADIR (Ontime)</text>
+        <rect x="200" y="8" width="60" height="18" rx="4" fill="#065f46"/>
+        <text x="210" y="20" fill="#34d399" font-family="monospace" font-size="8">VERIFIED</text>
+      </g>
+
+      <g transform="translate(18, 140)">
+        <rect x="0" y="0" width="270" height="36" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+        <text x="10" y="18" fill="#f8fafc" font-family="sans-serif" font-size="10" font-weight="600">Nabila Putri</text>
+        <text x="10" y="30" fill="#94a3b8" font-family="monospace" font-size="8">Status: HADIR (Ontime)</text>
+        <rect x="200" y="8" width="60" height="18" rx="4" fill="#065f46"/>
+        <text x="210" y="20" fill="#34d399" font-family="monospace" font-size="8">VERIFIED</text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="egBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#180c2e"/>
+      <stop offset="50%" stop-color="#241445"/>
+      <stop offset="100%" stop-color="#0f071e"/>
+    </linearGradient>
+    <pattern id="egGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#a855f7" stroke-width="0.7" opacity="0.12"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#egBg)"/>
+  <rect width="800" height="500" fill="url(#egGrid)"/>
+
+  <!-- Left: Game Engine Viewport -->
+  <g transform="translate(60, 45)">
+    <rect x="0" y="0" width="400" height="410" rx="18" fill="#130924" stroke="#3b1d6b" stroke-width="2"/>
+    
+    <rect x="0" y="0" width="400" height="38" rx="18" fill="#1e1038"/>
+    <circle cx="20" cy="19" r="5" fill="#ef4444"/>
+    <circle cx="36" cy="19" r="5" fill="#f59e0b"/>
+    <circle cx="52" cy="19" r="5" fill="#10b981"/>
+    <text x="75" y="23" fill="#e9d5ff" font-family="monospace" font-size="11" font-weight="bold">Python EduGame • Computational Logic Quest</text>
+
+    <rect x="16" y="52" width="368" height="260" rx="12" fill="#0a0414" stroke="#2e1065" stroke-width="1.5"/>
+    
+    <g opacity="0.3">
+      <line x1="16" y1="110" x2="384" y2="110" stroke="#7e22ce" stroke-width="1"/>
+      <line x1="16" y1="170" x2="384" y2="170" stroke="#7e22ce" stroke-width="1"/>
+      <line x1="16" y1="230" x2="384" y2="230" stroke="#7e22ce" stroke-width="1"/>
+      <line x1="90" y1="52" x2="90" y2="312" stroke="#7e22ce" stroke-width="1"/>
+      <line x1="160" y1="52" x2="160" y2="312" stroke="#7e22ce" stroke-width="1"/>
+      <line x1="230" y1="52" x2="230" y2="312" stroke="#7e22ce" stroke-width="1"/>
+      <line x1="300" y1="52" x2="300" y2="312" stroke="#7e22ce" stroke-width="1"/>
+    </g>
+
+    <!-- Character & Collectible -->
+    <rect x="105" y="125" width="38" height="38" rx="8" fill="#a855f7" stroke="#e9d5ff" stroke-width="2"/>
+    <circle cx="118" cy="140" r="3" fill="#ffffff"/>
+    <circle cx="132" cy="140" r="3" fill="#ffffff"/>
+    <rect x="117" y="150" width="16" height="4" rx="2" fill="#3b0764"/>
+
+    <polygon points="265,125 273,142 291,142 277,153 282,170 265,160 248,170 253,153 239,142 257,142" fill="#fbbf24" stroke="#f59e0b" stroke-width="1.5"/>
+
+    <path d="M 143 144 L 245 144" stroke="#c084fc" stroke-width="3" stroke-dasharray="6,4"/>
+
+    <rect x="16" y="325" width="368" height="72" rx="10" fill="#1a0c30" stroke="#4c1d95" stroke-width="1"/>
+    <text x="28" y="347" fill="#c084fc" font-family="monospace" font-size="11">while not hero.at_goal():</text>
+    <text x="48" y="365" fill="#38bdf8" font-family="monospace" font-size="11">hero.move_forward() <tspan fill="#64748b"># step algorithms</tspan></text>
+    <text x="48" y="383" fill="#a855f7" font-family="monospace" font-size="11">hero.collect_gem() <tspan fill="#10b981"># SCORE +100</tspan></text>
+  </g>
+
+  <!-- Right: Community Impact -->
+  <g transform="translate(485, 45)">
+    <rect x="0" y="0" width="265" height="410" rx="18" fill="#130924" stroke="#3b1d6b" stroke-width="1.5"/>
+    <rect x="0" y="0" width="265" height="38" rx="18" fill="#1e1038"/>
+    <text x="18" y="24" fill="#f8fafc" font-family="sans-serif" font-size="12" font-weight="bold">Pengabdian Masyarakat</text>
+
+    <g transform="translate(18, 55)">
+      <text x="0" y="15" fill="#c084fc" font-family="sans-serif" font-size="12" font-weight="bold">Key Objectives</text>
+      
+      <g transform="translate(0, 30)">
+        <circle cx="6" cy="6" r="4" fill="#a855f7"/>
+        <text x="18" y="10" fill="#e9d5ff" font-family="sans-serif" font-size="11" font-weight="600">Computational Thinking</text>
+        <text x="18" y="25" fill="#94a3b8" font-family="sans-serif" font-size="10">Decomposition, patterns &amp; logic loops for early learners.</text>
+      </g>
+
+      <g transform="translate(0, 85)">
+        <circle cx="6" cy="6" r="4" fill="#a855f7"/>
+        <text x="18" y="10" fill="#e9d5ff" font-family="sans-serif" font-size="11" font-weight="600">Python OOP Architecture</text>
+        <text x="18" y="25" fill="#94a3b8" font-family="sans-serif" font-size="10">Modular game entities, state manager &amp; input controller.</text>
+      </g>
+
+      <g transform="translate(0, 140)">
+        <circle cx="6" cy="6" r="4" fill="#a855f7"/>
+        <text x="18" y="10" fill="#e9d5ff" font-family="sans-serif" font-size="11" font-weight="600">Digital Literacy Advocacy</text>
+        <text x="18" y="25" fill="#94a3b8" font-family="sans-serif" font-size="10">Empowering beginner youth to transition from gamers to creators.</text>
+      </g>
+
+      <line x1="0" y1="205" x2="230" y2="205" stroke="#3b1d6b" stroke-width="1"/>
+
+      <text x="0" y="230" fill="#94a3b8" font-family="monospace" font-size="10">Tech: <tspan fill="#c084fc">Python 3 • Pygame</tspan></text>
+      <text x="0" y="250" fill="#94a3b8" font-family="monospace" font-size="10">Role: <tspan fill="#c084fc">Project Lead &amp; Dev</tspan></text>
+      <text x="0" y="270" fill="#94a3b8" font-family="monospace" font-size="10">Target: <tspan fill="#34d399">Beginner Students</tspan></text>
+    </g>
+  </g>
+</svg>
