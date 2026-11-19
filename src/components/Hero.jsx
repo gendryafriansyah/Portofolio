@@ -77,20 +77,6 @@ export default function Hero() {
             </a>
 
             <a
-              href={profile.presentation}
-              download
-              className="px-5 py-3 border border-[#e5e7eb] dark:border-[#2E3238] bg-white dark:bg-[#16181D] text-[#111] dark:text-white rounded-lg font-semibold text-sm transition-all duration-200 hover:border-emerald-500 hover:text-emerald-500 hover:shadow-sm cursor-pointer inline-flex items-center gap-2"
-              title="Unduh slide presentasi portofolio format PowerPoint (.pptx)"
-            >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-emerald-500">
-                <rect width="18" height="14" x="3" y="3" rx="2" />
-                <path d="M3 9h18" />
-                <path d="M9 21V9" />
-              </svg>
-              <span>Slide Deck (.PPTX)</span>
-            </a>
-
-            <a
               href="#ai-demo"
               className="px-4 py-3 text-xs font-mono font-medium text-emerald-600 dark:text-emerald-400 hover:underline inline-flex items-center gap-1.5"
             >

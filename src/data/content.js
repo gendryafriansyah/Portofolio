@@ -12,7 +12,6 @@ export const profile = {
   github: 'https://github.com/gendryafriansyah',
   repo: 'https://github.com/gendryafriansyah/Portofolio',
   cv: '/credentials/Curriculum%20Vitae.pdf',
-  presentation: '/Portofolio_Mochammad_Gendry_Afriansyah.pptx',
   gpa: '3.51 / 4.00',
   university: 'Universitas Muhammadiyah Jakarta',
   major: 'S1 Teknik Informatika',

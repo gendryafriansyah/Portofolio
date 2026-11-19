@@ -57,9 +57,6 @@ Berpengalaman dalam riset dan implementasi model **Machine Learning**, **Compute
    - Tombol unduh berkas asli PDF CV (*Curriculum Vitae.pdf*).
    - Tautan langsung ke Gmail (`gendryap@gmail.com`), GitHub (`github.com/gendryafriansyah`), dan LinkedIn (`linkedin.com/in/mgendrya`).
 
-6. **Slide Deck Presentasi Portofolio (.PPTX)**
-   - Tersedia berkas presentasi eksekutif siap pakai (`Portofolio_Mochammad_Gendry_Afriansyah.pptx`) 9 slide berdesain modern bertema Dark Tech dengan visual mockup arsitektur, diagram alur, dan metrik teruji.
-
 ---
 
 ## 💼 Proyek Portofolio (Sesuai CV)
@@ -190,7 +187,6 @@ Jika Anda tertarik untuk berdiskusi, bekerja sama, atau membuka kesempatan karir
 - 🐙 **GitHub:** [github.com/gendryafriansyah](https://github.com/gendryafriansyah)
 - 📱 **Telepon:** +62 851-1167-1109
 - 📄 **Curriculum Vitae:** [Unduh Berkas PDF](public/credentials/Curriculum%20Vitae.pdf)
-- 📊 **Slide Presentasi:** [Unduh Berkas PPTX](public/Portofolio_Mochammad_Gendry_Afriansyah.pptx)
 
 ---
 
